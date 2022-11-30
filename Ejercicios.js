@@ -1,5 +1,7 @@
+/////////////////////////se declara la variable para el menu
 let etiquetaBoton = document.getElementById("boton");
 
+/////////////////////////se hace la funcion para que todas las operaiones enten en un menu
 etiquetaBoton.addEventListener("click", function () {
   var respuesta = Number(prompt("1.Ingresar al menú \n2.Cerrar"));
   while (respuesta == 1) {
@@ -245,7 +247,7 @@ etiquetaBoton.addEventListener("click", function () {
   }
 });
 
-//////////////01//////////////////////
+/////////////////////////01///////////////////////////
 function obtenerArea() {
   let a = parseFloat(prompt("Digita el primer numero: "));
   let b = parseFloat(prompt("Digita el segundo numero: "));
@@ -260,7 +262,7 @@ function obtenerArea() {
   }
 }
 
-////////////////////02/////////////////////
+/////////////////////////02///////////////////////////
 function matrices() {
   let matriz = [
     { 1: 6, 2: 0, 3: 7, 4: 0 },
@@ -275,14 +277,14 @@ function matrices() {
   );
 }
 
-/////////////////////05/////////////////////////
+/////////////////////////05///////////////////////////
 function casilleros() {
   let casillero = [[], [], [], [], [], [], [], [], [], []];
   var opcion = Number(prompt("1.Agregar un objeto 2.Salir"));
   do {
     let casilla = Number(
       prompt(
-        "1.CasilleroUno\n2.CasilleroDos\n3.CasilleroTres\n4.CasilleroCuatro\n5.CasilleroCinco\n6.CasilleroSeis\n7.CasilleroSiete\n8.CasilleroOcho\n9.CasilleroNueve\n10.CasilleroDiez\n11.Salir"
+        "1.Casillero 01\n2.Casillero 02\n3.Casillero 03\n4.Casillero 04\n5.Casillero 05\n6.Casillero 06\n7.Casillero 07\n8.Casillero 08\n9.Casillero 09\n10.Casillero 10\n11.Salir"
       )
     );
 
@@ -366,7 +368,7 @@ function casilleros() {
   }
 }
 
-/////////////////////////06/////////////////////////
+/////////////////////////06///////////////////////////
 function casilleroPisos() {
   let casilleros = [
     [["1, "], ["2, "], ["3, "], ["4, "], ["5, "]],
@@ -480,7 +482,7 @@ function casilleroPisos() {
   }
 }
 
-//////////////////////07//////////////////////////////
+/////////////////////////07///////////////////////////
 function casilleroPisosImpar() {
   let casilleros = [
     [[""], [""], [""], [""], [""]],
@@ -594,7 +596,7 @@ function casilleroPisosImpar() {
   }
 }
 
-///////////////////////11//////////////////////////
+/////////////////////////07///////////////////////////
 function compararVectores() {
   var arreglo = [
     1, 2, 5, 7, 9, 24, 15, 75, 22, 55, 37, 20, 74, 63, 96, 75, 42, 46, 6, 8,
@@ -618,7 +620,7 @@ function compararVectores() {
   );
 }
 
-//////////////////////12//////////////////////////////
+/////////////////////////12///////////////////////////
 function sumaVectores() {
   var arreglo = [
     1, 2, 5, 7, 9, 27, 15, 73, 29, 55, 37, 20, 74, 63, 96, 75, 42, 46, 6, 8,
@@ -632,7 +634,7 @@ function sumaVectores() {
   document.write(`La suma de los vecores da: ${suma}`);
 }
 
-////////////////////13//////////////////
+/////////////////////////13///////////////////////////
 function imc() {
   let peso = parseInt(prompt("Ingrese su peso: "));
   let altura = parseFloat(prompt("ingrese su altura: "));
@@ -667,7 +669,7 @@ function imc() {
   }
 }
 
-////////////////////////14/////////////////
+/////////////////////////14///////////////////////////
 function banco() {
   let dinero = 2000000;
 
@@ -684,7 +686,7 @@ function banco() {
   }
 }
 
-///////////////////////15////////////////////
+/////////////////////////15///////////////////////////
 function ventaManual() {
   let codigo = prompt("El codigo de su articulo es: ");
 
@@ -712,7 +714,7 @@ function ventaManual() {
   }
 }
 
-//////////////16////////////////////////
+/////////////////////////16///////////////////////////
 function fahrenheit() {
   let fahrenheit = parseFloat(prompt("Cúal es su temperatura?"));
   let centigrados = ((fahrenheit - 32) * 5) / 9;
