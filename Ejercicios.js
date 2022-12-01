@@ -719,9 +719,9 @@ function fahrenheit() {
   let fahrenheit = parseFloat(prompt("Cúal es su temperatura?"));
   let centigrados = ((fahrenheit - 32) * 5) / 9;
   if (centigrados < 38) {
-    alert(`Temperatura: ${centigrados}<br/> No tiene fiebre`);
+    document.write(`Temperatura: ${centigrados} <br/> No tiene fiebre`);
   } else {
-    alert(
+    document.write(
       `Temperatura: ${centigrados}  <br/> Tiene fiebre, es recomendable ir a un médico`
     );
   }
